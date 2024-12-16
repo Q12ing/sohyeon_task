@@ -24,6 +24,7 @@ main .container .sign_up_sns .sns {text-align:center;}
 main .container .sign_up_sns .sns a {margin-left:20px;}
 main .container .sign_up_sns .sns a:first-child {margin:0;}
 main .container .sign_up_sns .sns a img {}
+/* =============================================== 전체 공용선택자 */
 main .container #joinFrm {}
 main .container #joinFrm dl {}
 main .container #joinFrm dl dt {
@@ -35,6 +36,13 @@ main .container #joinFrm dl dd .sub_txt {
     color:#777; font-size:0.88rem; letter-spacing:-0.02em;
     margin:0 0 10px;
 }
+main .container #joinFrm dl dd > input {
+    border:1px solid #ddd; border-radius:3px;
+    width:100%; padding:10px;
+}
+main .container #joinFrm dl dd input::placeholder {color:#bbb; letter-spacing:-0.02em;}
+main .container #joinFrm dl dd span {}
+/* ============================================ */
 main .container #joinFrm dl dd:nth-of-type(1) {
     display:flex;
     flex-flow:row wrap;
@@ -44,16 +52,6 @@ main .container #joinFrm dl dd:nth-of-type(1) {
 main .container #joinFrm dl dd:nth-of-type(1) span {
     color:#777; letter-spacing:-0.02em;
 }
-main .container #joinFrm dl dd>input {
-    width:100%; border:1px solid #ddd; border-radius:3px;
-    padding:10px;
-}
-main .container #joinFrm dl dd input::placeholder {
-    color:#bbb; letter-spacing:-0.02em;
-}
-main .container #joinFrm dl dd input[name^=user] {}
-main .container #joinFrm dl dd span {}
-/* 개별선택자 */
 main .container #joinFrm dl dd .agency {
     width:170px; border:1px solid #ddd; border-radius:3px;
     padding:10px;
@@ -65,13 +63,12 @@ main .container #joinFrm dl dd > .email_btn {
     background-color:#f5f5f5; border:1px solid #ddd; border-radius:3px;
     color:#777; font-weight:600; letter-spacing:-0.02em;
 }
-main .container #joinFrm dl dd input[name$=email] {
-    width:170px;
-}
+/* ================================ input 개별 선택자 */
+main .container #joinFrm dl dd input[name$=email] {width:170px;}
 main .container #joinFrm dl dd input[name$=pw] {}
 main .container #joinFrm dl dd input[name$=re_pw] {}
 main .container #joinFrm dl dd input[name$=ninkname] {}
-/* 체크박스 선택자 */
+/* ================================ 체크박스 선택자 */
 main .container #joinFrm dl .clause_checkbox {
     border:1px solid #ddd; border-radius:3px; padding:10px;
 }
